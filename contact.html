@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Request a Quote | Weld Solutions Laser Welding</title>
+<meta name="description" content="Request a laser welding quote from Weld Solutions. Send your drawing and get a quote within two business days.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap bar">
+    <a class="logo" href="index.html"><img src="images/ws-logo.png" alt="Weld Solutions"></a>
+    <button class="menu-btn" aria-label="Menu" onclick="document.body.classList.toggle('nav-open')">&#9776;</button>
+    <nav><a href="index.html">Home</a><a href="parts.html">Parts</a><a href="quality.html">Quality</a><a href="about.html">About Us</a><a href="contact.html" class="on" aria-current="page">Contact</a><a class="btn small" href="contact.html">Request a Quote</a></nav>
+  </div>
+</header>
+<main>
+
+<section class="page-head"><div class="wrap">
+  <p class="eyebrow">Contact</p>
+  <h1>Request a quote</h1>
+  <p class="lead">Send your print and a few details. We quote within two business days.</p>
+</div></section>
+<section><div class="wrap split contact">
+  <form name="quote" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="company-website" enctype="multipart/form-data" class="form">
+    <input type="hidden" name="form-name" value="quote">
+    <p class="hp"><label>Leave blank <input name="company-website"></label></p>
+    <div class="row2">
+      <label>Name<input name="name" required></label>
+      <label>Company<input name="company"></label>
+    </div>
+    <div class="row2">
+      <label>Email<input type="email" name="email" required></label>
+      <label>Phone<input type="tel" name="phone"></label>
+    </div>
+    <div class="row2">
+      <label>Material<input name="material" placeholder="e.g. 316L, Ti-6Al-4V"></label>
+      <label>Quantity<input name="quantity" placeholder="e.g. 25 pcs, then 200 per month"></label>
+    </div>
+    <label>Specifications or certifications required<input name="specs" placeholder="e.g. AWS D17.1 Class A, ISO 13485"></label>
+    <label>Tell us about the part<textarea name="message" rows="5"></textarea></label>
+    <label>Attach a drawing (PDF or image, up to 8 MB)<input type="file" name="drawing" accept=".pdf,.png,.jpg,.jpeg,.dxf,.step,.stp"></label>
+    <button class="btn" type="submit">Send Request</button>
+  </form>
+  <aside>
+    <div class="card">
+      <h3>Talk to us directly</h3>
+      <p><a href="mailto:steve@weldsolutions.com">steve@weldsolutions.com</a><br><a href="tel:+19124219447">912-421-9447</a></p>
+      <h3>Locations</h3>
+      <p>Long Island, NY<br>West Palm Beach, FL</p>
+      <h3>What happens next</h3>
+      <ol class="steps">
+        <li>Contract review of your print and requirements</li>
+        <li>Quote within two business days</li>
+        <li>Weld schedule development and first article</li>
+        <li>Production with full inspection and traceability</li>
+      </ol>
+    </div>
+  </aside>
+</div></section>
+
+</main>
+<footer class="site">
+  <div class="wrap foot">
+    <div>
+      <img src="images/ws-logo.png" alt="Weld Solutions" class="flogo">
+      <p>Precision laser welding job shop.<br>Long Island, NY &nbsp;|&nbsp; West Palm Beach, FL</p>
+    </div>
+    <div>
+      <h4>Pages</h4>
+      <a href="index.html">Home</a><a href="parts.html">Parts</a><a href="quality.html">Quality</a><a href="about.html">About Us</a><a href="contact.html">Contact</a>
+      <a href="https://weldsolutions.com">weldsolutions.com</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="mailto:steve@weldsolutions.com">steve@weldsolutions.com</a>
+      <a href="tel:+19124219447">912-421-9447</a>
+    </div>
+  </div>
+  <div class="wrap legal">&copy; <span class="yr">2026</span> Weld Solutions, a registered fictitious name of DeLalio Ventures LLC</div>
+</footer>
+<script>document.querySelectorAll('.yr').forEach(e=>e.textContent=new Date().getFullYear());</script>
+</body>
+</html>
