@@ -53,7 +53,7 @@ header nav a.on { box-shadow: inset 0 -2px 0 var(--blue); padding-bottom: 4px; }
 .hero .lead { color: #c3cbd4; }
 .hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 56px; align-items: center; }
 .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 26px; }
-.hero-fig { margin: 0; }
+.hero-fig { margin: 0 auto; max-width: 340px; }
 .hero-fig img { border-radius: 6px; box-shadow: 0 20px 50px rgba(0,0,0,.45); }
 .hero-fig figcaption { color: #9aa4ae; font-size: .85rem; margin-top: 10px; }
 
@@ -113,7 +113,7 @@ section.alt .card { border-color: var(--line); border-top-color: var(--blue); }
 
 .people { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 26px; }
 .person { display: flex; gap: 20px; align-items: flex-start; }
-.person img, .avatar { width: 110px; height: 140px; object-fit: cover; border-radius: 4px; flex: none; }
+.person img, .avatar { width: 150px; height: 188px; object-fit: cover; border-radius: 4px; flex: none; }
 .avatar { background: var(--steel); color: #fff; display: flex; align-items: center; justify-content: center; font-family: "Barlow Semi Condensed", sans-serif; font-size: 2rem; font-weight: 700; }
 .role { color: var(--blue) !important; font-weight: 600; font-size: .92rem; margin-top: -6px; }
 
@@ -172,3 +172,4 @@ footer a:hover { color: #fff; }
   .head-row { flex-direction: column; align-items: flex-start; }
   .logo img { height: 44px; }
 }
+.fig img[src*="keyhole"] { max-width: 340px; }
