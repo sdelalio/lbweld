@@ -187,3 +187,5 @@ footer a:hover { color: #fff; }
   .timeline li { padding: 0 0 22px 34px; }
 }
 .also { margin-top: 22px; color: var(--muted); }
+.stat-row span { display: block; line-height: 1.45; margin-top: 4px; }
+@media (max-width: 600px) { .stat-row b { font-size: 1.35rem; white-space: nowrap; } .stat-row div { padding: 20px 14px; } }
